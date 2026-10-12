@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="300" viewBox="0 0 1280 300">
+  <defs>
+    <pattern id="dots" width="15" height="15" patternUnits="userSpaceOnUse">
+      <circle cx="7.5" cy="7.5" r="1.1" fill="#0d0d11" fill-opacity="0.16"/>
+    </pattern>
+    <radialGradient id="fade" cx="30%" cy="20%" r="90%">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.78" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="spot"><rect width="1280" height="300" fill="url(#fade)"/></mask>
+    <clipPath id="card"><rect width="1280" height="300" rx="20"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="1280" height="300" fill="#e9e5dd"/>
+    <rect width="1280" height="300" fill="url(#dots)" mask="url(#spot)"/>
+  </g>
+  <text x="72" y="150" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="76" font-weight="700" letter-spacing="-1.5" fill="#15151b">Dániel Kerekes</text>
+  <text x="74" y="210" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="27" fill="#3d3d45">Full-stack engineer. Web, mobile and desktop.</text>
+  <text x="74" y="254" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" letter-spacing="5" fill="#6b5326">HUNGARY · REMOTE (CET)</text>
+</svg>
